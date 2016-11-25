@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="email=no"/>
+	<meta charset="UTF-8">
+	<title>Document</title>	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="box">
+		<div id="gwc">
+			
+		</div>
+	</div>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+		$.gwcfn("#gwc",{
+			val:1,
+			max:10,
+			min:1,
+			step:1,
+			dj:38.5,
+			succe:function(e,m){
+				$(".zj").text(e*m+"元");
+			}
+
+		})
+
+	</script>
+</body>
+</html>
